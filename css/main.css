@@ -4,6 +4,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+
 }
 
 header{
@@ -106,7 +107,6 @@ h2 {
     padding-left: 23%;
     padding-right: 23%;
     text-align: center;
-    padding-bottom: 160px;
 }
 
 .grid-container {
@@ -124,5 +124,22 @@ h2 {
     margin-bottom: 10px;
     font-size: 30px;
     text-align: center;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 25%);
+    grid-gap: 10px;
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    width: 100%;
+    vertical-align: middle;
+  }
+ 
+  .wrapper > div img {
+    max-width:100%;
+    padding-left: 20%;
+    padding-right: 20%;
+
   }
 
