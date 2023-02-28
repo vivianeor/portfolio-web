@@ -1,5 +1,5 @@
 /* Default styles for the browser */
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -7,20 +7,21 @@
 
 }
 
-header{
+header {
     width: 100vw;
     height: 150px;
     font-family: 'Poppins';
 }
 
-header .inner{
-    width: 1300px; /* This is the inner width of the content inside of your header (80%, etc) */
+header .inner {
+    width: 1300px;
+    /* This is the inner width of the content inside of your header (80%, etc) */
     height: 100%;
     display: block;
     margin: 0 auto;
 }
 
-header .logo{
+header .logo {
     display: table;
     height: auto;
     float: left;
@@ -29,32 +30,32 @@ header .logo{
     object-fit: cover;
 }
 
-header .logo div{
+header .logo div {
     height: 100%;
     display: table-cell;
     vertical-align: middle;
 }
 
-header .logo img{
+header .logo img {
     height: 85px;
     margin-top: 5px;
 }
 
-header nav{
+header nav {
     height: 100%;
     align-items: center;
     display: flex;
     justify-content: center;
 }
 
-header nav li{
+header nav li {
     display: table;
     height: 100%;
     float: left;
     margin-right: 30px;
 }
 
-header nav li:last-of-type{
+header nav li:last-of-type {
     margin-right: 0;
 }
 
@@ -63,18 +64,19 @@ header nav span {
     vertical-align: middle;
 }
 
-header nav a{
+header nav a {
     color: #101010;
 }
 
-header nav .button{
-    background-color: #1ab26b; /* This HEX is the color of the button */
+header nav .button {
+    background-color: #1ab26b;
+    /* This HEX is the color of the button */
     color: #FFF;
     padding: 10px 20px;
     border-radius: 4px;
 }
 
-header nav .button:hover{
+header nav .button:hover {
     filter: brightness(1.05);
 }
 
@@ -109,37 +111,21 @@ h2 {
     text-align: center;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+body {
+    overflow-x: hidden;
+    height: 100%;
+}
 
-  .grid-item {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size: 30px;
-    text-align: center;
-  }
-
-  .wrapper {
+.wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 25%);
-    grid-gap: 10px;
+    grid-template-columns: repeat(2, 40%);
     grid-column-gap: 25px;
     grid-row-gap: 25px;
-    width: 100%;
     vertical-align: middle;
-  }
- 
-  .wrapper > div img {
-    max-width:100%;
-    padding-left: 20%;
-    padding-right: 20%;
+    justify-content: center;
+    margin-top: 15%;
+}
 
-  }
-
+.wrapper>div img {
+    max-width: 100%;
+}
